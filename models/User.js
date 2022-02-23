@@ -19,18 +19,18 @@ const userSchema = new Schema(
         'Please fill a valid email address'
       ]
     },
-    thoughts: [{ type: Schema.Types.ObjectId, ref: 'Thoughts' }],
+    thoughts: [{ type: Schema.Types.ObjectId, ref: 'Thought' }],
     friends: [this]
   },
   {
-    toJSON: { virtuals: true, getters: true }
+    toJSON: { virtuals: true, getters: true }, id: false
   }
 );
 
 userSchema.plugin(uniqueValidator);
 
 userSchema.virtual('friendCount').get(function () {
-  return friends.length;
+  return this.friends.length;
 });
 
 const User = model('User', userSchema);
