@@ -31,35 +31,7 @@ This is for local install if you want to deploy the appliaction yourself
     npm install
 ```
 
-3. Enter your SQL database crendentials in .env file (see .env.Example)
-
-```
-    DB_HOST=<database hostname>
-    DB_NAME=tech_blog_db
-    DB_USER=<database user>
-    DB_PASS=<database password>
-```
-
-4. Login to SQL on command line
-
-```
-    mysql -u <user> -p
-```
-
-5. Create database by running the schema
-
-```
-    sourec db/schema.sql
-    quit
-```
-
-6. (Optional) Seed values for db
-
-```
-    npm run seeds
-```
-
-6. Start the application on nodeJS
+3. Start the application on nodeJS
 
 ```
     npm start
@@ -69,21 +41,21 @@ This is for local install if you want to deploy the appliaction yourself
 
 1. Once the application is started go to application website (default: https://localhost:3001)
 2. Homepage, ability to see all posts,
-   <img src="./images/step2.png" width="600">  
-3. Login page with option to create a new user   
+   <img src="./images/step2.png" width="600">
+3. Login page with option to create a new user  
    <img src="./images/step3a.png" width="300">
    <img src="./images/step3b.png" width="300">
 4. Dashboard available after login.
    <img src="./images/step4.png" width="600">
 5. Create new a post
-   <img src="./images/step5.png" width="600">  
+   <img src="./images/step5.png" width="600">
 6. Dashboard displays all posts created by user with ability to edit post
-   <img src="./images/step6.png" width="600">  
+   <img src="./images/step6.png" width="600">
 7. User can edit post content and title or delete post. Additionally user can also add comments to post here.
    <img src="./images/step7a.png" width="600">
    <img src="./images/step7b.png" width="600">
 8. Clicking on Post title redirects to post details and comments
-   <img src="./images/step8.png" width="600">  
+   <img src="./images/step8.png" width="600">
 
 ## Credits
 
