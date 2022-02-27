@@ -5,10 +5,9 @@
 This is a simple application to use Mongoose with node js to connect to mongo database and access REST apis. This is an application to utilize a social api command with to create, edit and delete users and friends as well as add thoughts and reactions.
 Techonologies: MVC structure, nodejs, express, MongoDB, Mongoose.
 
-## Link to Application
+## Application
 
-[Tech Blog  
-<img src="./images/tech_blog_app.png" width="600"> ](https://fabio-tech-blog.herokuapp.com/)
+<img src="./images/social-network-api.png" width="800"> 
 
 ## Table of Contents
 
@@ -39,23 +38,14 @@ This is for local install if you want to deploy the appliaction yourself
 
 ## Usage
 
-1. Once the application is started go to application website (default: https://localhost:3001)
-2. Homepage, ability to see all posts,
-   <img src="./images/step2.png" width="600">
-3. Login page with option to create a new user  
-   <img src="./images/step3a.png" width="300">
-   <img src="./images/step3b.png" width="300">
-4. Dashboard available after login.
-   <img src="./images/step4.png" width="600">
-5. Create new a post
-   <img src="./images/step5.png" width="600">
-6. Dashboard displays all posts created by user with ability to edit post
-   <img src="./images/step6.png" width="600">
-7. User can edit post content and title or delete post. Additionally user can also add comments to post here.
-   <img src="./images/step7a.png" width="600">
-   <img src="./images/step7b.png" width="600">
-8. Clicking on Post title redirects to post details and comments
-   <img src="./images/step8.png" width="600">
+1. Once the application is started access the api endpoints with localhost:3001/api
+2. User Endpoints:
+3. Friend Endpoints:
+4. Thoughts Endpoints:
+5. Reaction Endpoints:
+
+
+   
 
 ## Credits
 

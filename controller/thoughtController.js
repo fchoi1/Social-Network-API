@@ -57,7 +57,7 @@ const thoughtController = {
       const thoughtData = await Thought.findOneAndDelete({
         _id: params.thoughtId
       });
-      console.log('deleted thought', thoughtData);
+      console.log('deleted thought ', params.thoughtId);
       res.json(thoughtData);
     } catch (err) {
       console.log(err);

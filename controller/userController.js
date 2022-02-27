@@ -57,12 +57,8 @@ const userController = {
       const userData = await User.findOneAndDelete({ _id: params.userId });
       if (!userData)
         return res.status(404).json({ message: 'No user found with this id!' });
-      const thoughtData = await Thought.deleteMany({
-        username: userData.username
-      });
-      console.log('thought data:', thoughtData);
-      console.log('user data:', userData);
-      res.json(userData);
+      await Thought.deleteMany({ username: userData.username });
+      res.json({ message: `delete user ${params.userId}` });
     } catch (err) {
       console.log(err);
       res.status(400).json(err);
@@ -85,7 +81,22 @@ const userController = {
       res.status(400).json(err);
     }
   },
-  deleteFriend: async ({ params }, res) => {}
+  deleteFriend: async ({ params }, res) => {
+    try {
+      const userData = await User.findOneAndUpdate(
+        { _id: params.userId },
+        { $pull: { friends: params.friendId } },
+        { new: true }
+      );
+      if (!userData)
+        return res.status(404).json({ message: 'No user found with this id!' });
+
+      res.json({ message: `delete friend from list ${params.friendId}` });
+    } catch (err) {
+      console.log(err);
+      res.status(400).json(err);
+    }
+  }
 };
 
 module.exports = userController;
