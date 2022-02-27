@@ -7,7 +7,7 @@ Techonologies: MVC structure, nodejs, express, MongoDB, Mongoose.
 
 ## Application
 
-<img src="./images/social-network-api.png" width="800"> 
+<img src="./images/social-network-api.PNG" width="800"> 
 
 ## Table of Contents
 
