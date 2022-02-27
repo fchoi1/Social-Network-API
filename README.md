@@ -40,9 +40,30 @@ This is for local install if you want to deploy the appliaction yourself
 
 1. Once the application is started access the api endpoints with localhost:3001/api
 2. User Endpoints:
+ - localhost:3001/api/users 
+    - GET: list all users
+    - POST: create a user
+ - localhost:3001/api/users/:userdId
+    - GET: get a user by id
+    - DELETE: delete a single user
+    - PUT: update a single user 
 3. Friend Endpoints:
-4. Thoughts Endpoints:
+ - localhost:3001/api/users/:userId/friends/:friendId 
+    - POST: add a friend to friends list for a single user
+    - DELETE: remove a friend from firends list for a single user
+4. Thoughts Endpoints: 
+ - localhost:3001/api/thoughts
+    - GET: get all thoughts 
+    - POST: Create a new thought and add to user
+ - localhost:3001/api/thoughts/:thoughtId
+    - GET: get a single thought by Id
+    - PUT: update a single thought by Id
+    - DELETE: delete a single thought by Id
 5. Reaction Endpoints:
+ - localhost:3001/api/thoughts/:thoughtId/reactions
+    - POST: create a reaction from a single thought
+ - localhost:3001/api/thoughts/:thoughtId/reactions/:reactionId
+    - DELETE: delete a reaction by Id
 
 
    
